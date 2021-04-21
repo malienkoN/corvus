@@ -1,0 +1,22 @@
+.social {
+  display: flex;
+}
+
+.social__item + .social__item {
+  margin-left: 15px;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: $yellow;
+  transition: background-color .2s linear;
+
+  &:hover {
+    background-color: darken($yellow, 5%);
+  }
+}

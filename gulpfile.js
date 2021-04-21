@@ -39,7 +39,6 @@ exports.styles = styles;
 // Html
 
 const html = () => {
-    panini.refresh();
     return gulp.src('source/*.html')
         .pipe(panini({
             root: 'source/pages/',
@@ -65,6 +64,15 @@ const Uglify = () => {
 }
 
 exports.Uglify = Uglify;
+
+//resetPages
+
+// function resetPages(done) {
+//     panini.refresh();
+//     done();
+// }
+//
+// exports.resetPages = resetPages;
 
 // Images
 
@@ -157,8 +165,9 @@ exports.server = server;
 
 const watcher = () => {
     gulp.watch('source/sass/**/*.scss', gulp.series('styles'));
-    gulp.watch('source/*html').on('change', gulp.series(build, sync.reload));
+    gulp.watch('source/*.html').on('change', gulp.series(build, sync.reload));
     gulp.watch('source/js/*.js', gulp.series('Uglify'));
+    gulp.watch(['source/{layouts,partials,helpers,data}/**/*'], panini.refresh());
 }
 
 exports.default = gulp.series(

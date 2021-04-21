@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="11.561" height="12.881" viewBox="0 0 11.561 12.881">
-  <g id="Icon_feather-user" data-name="Icon feather-user" transform="translate(0.5 0.5)">
-    <path id="Контур_1" data-name="Контур 1" d="M16.561,26.46V25.14a2.64,2.64,0,0,0-2.64-2.64H8.64A2.64,2.64,0,0,0,6,25.14v1.32" transform="translate(-6 -14.579)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-    <path id="Контур_2" data-name="Контур 2" d="M17.28,7.14A2.64,2.64,0,1,1,14.64,4.5a2.64,2.64,0,0,1,2.64,2.64Z" transform="translate(-9.36 -4.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="11.561" height="12.881"><g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M11.061 12.381v-1.32a2.64 2.64 0 00-2.64-2.64H3.14a2.64 2.64 0 00-2.64 2.64v1.32M8.42 3.14A2.64 2.64 0 115.78.5a2.64 2.64 0 012.64 2.64z"/></g></svg>
