@@ -67,7 +67,9 @@ title: home
         <div class="container">
             <div class="header__middle-inner">
                 <div class="header__logo-wrapper">
-                    <img class="img" src="img/logo.png" width="175" height="59" alt="Corvus">
+                    <a href="index.html">
+                        <img class="img" src="img/logo.png" width="175" height="59" alt="Corvus">
+                    </a>
                     <p class="header__logo-text">
                         Інтернет магазин
                         зброї та&nbsp;рибальского
@@ -86,7 +88,7 @@ title: home
 
                 <ul class="header__action">
                     <li class="header__action-item">
-                        <a class="header__action-link" id="tel-dropdown" href="tel:380934142016">
+                        <a class="header__action-link header__action-link--phone" id="tel-dropdown__trigger" href="tel:380934142016">
                             <svg class="header__action-icon__phone" width="15" height="15" viewBox="0 0 15 15">
                                 <use xlink:href="img/sprite.svg#icon-phone"></use>
                             </svg>
@@ -95,6 +97,34 @@ title: home
                                 <use xlink:href="img/sprite.svg#icon-dropdown"></use>
                             </svg>
                         </a>
+
+                        <!-- tel-dropdown -->
+                        <ul class="tel-dropdown">
+                            <li class="tel-dropdown__item">
+                                <a class="tel-dropdown__link" href="tel:380934142016">
+                                    <svg class="tel-dropdown__icon" width="15" height="15" viewBox="0 0 15 15">
+                                        <use xlink:href="img/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                    +38 (093) 414-20-16
+                                </a>
+                            </li>
+                            <li class="tel-dropdown__item">
+                                <a class="tel-dropdown__link" href="tel:380934142016">
+                                    <svg class="tel-dropdown__icon" width="15" height="15" viewBox="0 0 15 15">
+                                        <use xlink:href="img/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                    +38 (093) 414-20-16
+                                </a>
+                            </li>
+                            <li class="tel-dropdown__item">
+                                <a class="tel-dropdown__link" href="tel:380934142016">
+                                    <svg class="tel-dropdown__icon" width="15" height="15" viewBox="0 0 15 15">
+                                        <use xlink:href="img/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                    +38 (093) 414-20-16
+                                </a>
+                            </li>
+                        </ul>
                     </li>
 
                     <li class="header__action-item">
@@ -123,6 +153,91 @@ title: home
                         </a>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__bottom">
+        <div class="container">
+            <div class="header__bottom-inner">
+                <div class="dropdown">
+                    <button class="dropdown__btn btn" type="button">
+                        Каталог товарів
+                        <svg width="29" height="20" viewBox="0 0 29 20">
+                            <use xlink:href="img/sprite.svg#icon-burger"></use>
+                        </svg>
+                    </button>
+                    
+                    <ul class="dropdown__content visible">
+                        <li class="dropdown__content-item">
+                            <a class="dropdown__content-link" href="#">
+                                <span class="dropdown__content-circle first"></span>
+                                Рибальські товари
+                            </a>
+                        </li>
+                        <li class="dropdown__content-item">
+                            <a class="dropdown__content-link" href="#">
+                                <span class="dropdown__content-circle second"></span>
+                                Зброя та&nbsp;комплектуючі
+                            </a>
+                        </li>
+                        <li class="dropdown__content-item">
+                            <a class="dropdown__content-link" href="#">
+                                <span class="dropdown__content-circle third"></span>
+                                Оптика та&nbsp;комплектуючі
+                            </a>
+                        </li>
+                        <li class="dropdown__content-item">
+                            <a class="dropdown__content-link" href="#">
+                                <span class="dropdown__content-circle fourth"></span>
+                                Ножі та&nbsp;інструменти
+                            </a>
+                        </li>
+                        <li class="dropdown__content-item">
+                            <a class="dropdown__content-link" href="#">
+                                <span class="dropdown__content-circle fifth"></span>
+                                Одяг та&nbsp;екіпірування
+                            </a>
+                        </li>
+                        <li class="dropdown__content-item">
+                            <a class="dropdown__content-link" href="#">
+                                <span class="dropdown__content-circle sixth"></span>
+                                Спорядження і&nbsp;туризм
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Про магазин</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Огляди товарів</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Новини та статті</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Доставка&nbsp;&mdash; оплата</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Відгукі</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Контакти</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Про магазин</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a class="header__bottom-discount btn" href="#">Знижки</a>
             </div>
         </div>
     </div>

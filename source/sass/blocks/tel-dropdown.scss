@@ -1,0 +1,25 @@
+.tel-dropdown {
+  display: none;
+  width: 220px;
+  padding: 20px 24px 15px 17px;
+  background-color: #3c3c3c;
+  position: absolute;
+  left: -17px;
+  top: 150%;
+  z-index: 3;
+}
+
+.tel-dropdown__item + .tel-dropdown__item {
+  margin-top: 10px;
+}
+
+.tel-dropdown__link {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.tel-dropdown__icon {
+  margin-right: 12px;
+}

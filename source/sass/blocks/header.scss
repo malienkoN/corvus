@@ -84,7 +84,7 @@
   font-weight: 400;
   color: $black;
 
-  padding: 14.5px 50px 14.5px 26px;
+  padding: 14.5px 60px 14.5px 26px;
   background-color: $white;
   border: 1px solid #e2e2e2;
   border-radius: 0;
@@ -123,6 +123,10 @@
   align-items: center;
 }
 
+.header__action-item {
+  position: relative;
+}
+
 .header__action-item + .header__action-item {
   margin-left: 30px;
 }
@@ -132,6 +136,11 @@
   align-items: center;
   position: relative;
   font-size: 14px;
+
+  &--phone {
+    font-size: 16px;
+    font-weight: 700;
+  }
 }
 
 .header__action-icon__phone {
@@ -140,6 +149,11 @@
 
 .header__action-icon__dropdown {
   margin-left: 8px;
+  transition: transform .2s linear;
+
+  &.rotate {
+    transform: rotate(180deg);
+  }
 }
 
 .header__action-icon__bag {
@@ -161,4 +175,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.header__bottom {
+  min-height: 65px;
+  background-color: $yellow;
+}
+
+.header__bottom-inner {
+  display: flex;
+  align-items: center;
+}
+
+.header__bottom-discount {
+  background: url('../img/bg.jpg') no-repeat center;
+  background-size: cover;
+
+  padding: 16.5px 0;
+  width: 191px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Bebas Neue Cyrillic', sans-serif;
+  font-size: 25px;
+  color: $white;
 }

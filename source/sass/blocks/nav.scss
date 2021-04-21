@@ -1,0 +1,17 @@
+.nav {
+  padding: 0 30px;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  font-family: 'Bebas Neue Cyrillic', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: $black;
+}
