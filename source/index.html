@@ -129,7 +129,7 @@ title: home
 
                     <li class="header__action-item">
                         <a class="header__action-link" href="#">
-                            <svg width="34" height="27" viewBox="0 0 34 27">
+                            <svg class="header__action-icon__scale" width="34" height="27" viewBox="0 0 34 27">
                                 <use xlink:href="img/sprite.svg#icon-scale"></use>
                             </svg>
                         </a>
@@ -137,7 +137,7 @@ title: home
 
                     <li class="header__action-item">
                         <a class="header__action-link" href="#">
-                            <svg width="26" height="23" viewBox="0 0 26 23">
+                            <svg class="header__action-icon__favourite" width="26" height="23" viewBox="0 0 26 23">
                                 <use xlink:href="img/sprite.svg#icon-favourite"></use>
                             </svg>
                         </a>
@@ -149,7 +149,7 @@ title: home
                                 <use xlink:href="img/sprite.svg#icon-bag"></use>
                             </svg>
                             <span class="header__action-bag__number">3</span>
-                            <span>Кошик</span>
+                            <span class="header__action-link-bag__text">Кошик</span>
                         </a>
                     </li>
                 </ul>
@@ -370,11 +370,119 @@ title: home
                                     <a href="#">
                                         <span class="dropdown__text">Приманки і&nbsp;прикормки</span>
                                     </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-1-1-1"></span>
+                                                <span class="dropdown__text">Блешні</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-1-1-1"></span>
+                                                <span class="dropdown__text">Балансири</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-1-1-1"></span>
+                                                <span class="dropdown__text">Воблери</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-1-1-1"></span>
+                                                <span class="dropdown__text">Силікон</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-1-1-1"></span>
+                                                <span class="dropdown__text">Насадки</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-1-1-1"></span>
+                                                <span class="dropdown__text">Діпи</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-1-1-1"></span>
+                                                <span class="dropdown__text">Прикормка</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-1-1-1"></span>
+                                                <span class="dropdown__text">Добавки</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-1-1-1"></span>
+                                                <span class="dropdown__text">Аттрактанти і&nbsp;ліквіди</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-1-1-1"></span>
+                                                <span class="dropdown__text">Спреї</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <span class="dropdown__text">Рибальські аксесуари</span>
                                     </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-1-1-1"></span>
+                                                <span class="dropdown__text">Зберігання і&nbsp;транспортування</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-1-1-1"></span>
+                                                <span class="dropdown__text">Ехолоти</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-1-1-1"></span>
+                                                <span class="dropdown__text">Коропові кораблики</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-1-1-1"></span>
+                                                <span class="dropdown__text">Рушники та&nbsp;фартухи</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-1-1-1"></span>
+                                                <span class="dropdown__text">Коропові мати і&nbsp;мішки</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-1-1-1"></span>
+                                                <span class="dropdown__text">Кобри, ракети, рогатки</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-1-1-1"></span>
+                                                <span class="dropdown__text">Човни і&nbsp;підвісні двигуни</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
@@ -433,16 +541,115 @@ title: home
                                     <a href="#">
                                         <span class="dropdown__text">Боєприпаси</span>
                                     </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Набої</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Релоадинг</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Пневматичні боєприпаси</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Набої Флобера</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Стріли</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <span class="dropdown__text">Комплектуючі</span>
                                     </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Комплектуючі до&nbsp;зброї</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Комплектуючі до&nbsp;травматичної зброї</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Комплектуючі до&nbsp;пневматичної зброї</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Комплектуючі до&nbsp;метальної зброї</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Кріплення для оптики</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <span class="dropdown__text">Аксесуари</span>
                                     </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Зберігання та&nbsp;транспортування</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Чищення та&nbsp;догляд</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Стрілецькі аксесуари</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Мисливські аксесуари</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Аксесуари для собак</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
@@ -451,24 +658,864 @@ title: home
                                 <span class="dropdown__circle dropdown__circle-3"></span>
                                 <span class="dropdown__text">Оптика та&nbsp;комплектуючі</span>
                             </a>
+
+                            <ul class="dropdown__submenu">
+                                <li>
+                                    <a href="#">
+                                        <span class="dropdown__text">Приціли</span>
+                                    </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Оптичні приціли</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Коліматорні приціли</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Кріплення для оптики</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="dropdown__text">Оптика для спостереження</span>
+                                    </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Біноклі</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Монокуляри</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Зорові труби (телескопи)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Лазерні далекоміри</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="dropdown__text">Спеціальна оптика</span>
+                                    </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Тепловізійні приціли</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Тепловізійні бінокуляри</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Тепловізійні монокуляри</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Приціли нічного бачення</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Бінокуляри нічного бачення</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Монокуляри нічного бачення</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Окуляри нічного бачення</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Додаткові аксесуари до&nbsp;ПНБ</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="dropdown__text">Комплектуючі до&nbsp;оптики</span>
+                                    </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Кріплення для оптики</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Кришки і&nbsp;бленди</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Окуляри та&nbsp;об&rsquo;єктиви</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Наочники</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Чохли для оптики</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Ремені для оптики</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Штативи</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Адаптери і&nbsp;перехідники</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Засоби для догляду за&nbsp;оптикою</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Інші комплектуючі для оптики</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                         <li class="dropdown__content-item">
                             <a class="dropdown__content-link" href="#">
                                 <span class="dropdown__circle dropdown__circle-4"></span>
                                 <span class="dropdown__text">Ножі та&nbsp;інструменти</span>
                             </a>
+
+                            <ul class="dropdown__submenu">
+                                <li>
+                                    <a href="#">
+                                        <span class="dropdown__text">Ножі та&nbsp;комплектуючі</span>
+                                    </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Ножі з&nbsp;фіксованим клинком</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Ножі складані</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Мечі та&nbsp;шаблі</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Тренувальна зброя</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Комплектуючі для ножів</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Кухонні ножі</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="dropdown__text">Інструменти</span>
+                                    </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Мультитули</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Мачете</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Сокири</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Лопати</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Пилки</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Набори інструментів</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="dropdown__text">Точильне приладдя</span>
+                                    </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Електроточила</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Портативні точила</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Настільні точила</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Змінні камені</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Аксесуари для точил</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                         <li class="dropdown__content-item">
                             <a class="dropdown__content-link" href="#">
                                 <span class="dropdown__circle dropdown__circle-5"></span>
                                 <span class="dropdown__text">Одяг та&nbsp;екіпірування</span>
                             </a>
+
+                            <ul class="dropdown__submenu">
+                                <li>
+                                    <a href="#">
+                                        <span class="dropdown__text">Верхній одяг</span>
+                                    </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Куртки</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Костюми</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Светри і&nbsp;пуловери</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Піджаки і&nbsp;жилети</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Сорочки, теніски</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Футболки</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Брюки і&nbsp;комбінезони</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Шорти</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Інший одяг</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Засоби для догляду за&nbsp;одягом</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="dropdown__text">Білизна та&nbsp;аксесуари</span>
+                                    </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Термобілизна</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Шкарпетки</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Головні убори</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Нашивки і&nbsp;патчі</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Рукавички</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Паски</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Устілки і&nbsp;засоби обігріву</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Інші аксесуари</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Труси</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="dropdown__text">Взуття</span>
+                                    </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Черевики</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Чоботи</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Гумові чоботи</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Заброди і&nbsp;комбінезони</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Кросівки</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Сандалі</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Інше взуття</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Засоби для догляду за&nbsp;взуттям</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="dropdown__text">Екіпірування</span>
+                                    </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Розвантажувальні і&nbsp;бронежилети</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Страхувальні жилети</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Бронепластини</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Шоломи</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Налокітники і&nbsp;наколінники тактичні</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Навушники та&nbsp;беруші протишумові</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Окуляри</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                         <li class="dropdown__content-item">
                             <a class="dropdown__content-link" href="#">
                                 <span class="dropdown__circle dropdown__circle-6"></span>
                                 <span class="dropdown__text">Спорядження і&nbsp;туризм</span>
                             </a>
+
+                            <ul class="dropdown__submenu">
+                                <li>
+                                    <a href="#">
+                                        <span class="dropdown__text">Спорядження</span>
+                                    </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Рюкзаки</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Сумки</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Підсумки</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Гаманці</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Трекінгові палиці</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Стяжні ремені, кріплення і&nbsp;карабіни</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Гермопродукція</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Чохли для спорядження</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Туристичні рушники</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Питне спорядження</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="dropdown__text">Туризм та&nbsp;відпочинок</span>
+                                    </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Мультипаливне і&nbsp;газове обладнання</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Туристичний посуд</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Термопродукція</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Крісла і&nbsp;стільці</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Кухні туристичні</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Набори складних меблів</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Розкладачки і&nbsp;гамаки</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Столи туристичні</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Антимоскітні пристрої та&nbsp;засоби</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Біотуалети і&nbsp;душі</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Намети</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Тенти</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Парасолі</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Спальні мішки і&nbsp;квілти</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Килимки і&nbsp;каремати</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Подушки</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="dropdown__text">Активний відпочинок</span>
+                                    </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Ножі та&nbsp;інструменти</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Арбалети</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Дартс</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Рогатки і&nbsp;кульки</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Пневматична зброя</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Луки</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Радіостанції</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Екшен-камери</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Засоби для виживання</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Металошукачі</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Біти</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Квадрокоптери та&nbsp;дрони</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="dropdown__text">Ліхтарі і&nbsp;зарядні пристрої</span>
+                                    </a>
+
+                                    <ul class="dropdown__sub-submenu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Світлодіодні ліхтарі (LED)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Лазерні ліхтарі</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Комплектуючі для ліхтарів</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="dropdown__circle dropdown__circle-2-1-1"></span>
+                                                <span class="dropdown__text">Елементи живлення та&nbsp;адаптери</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -485,7 +1532,7 @@ title: home
                             <a class="nav__link" href="#">Новини та статті</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Доставка&nbsp;&mdash; оплата</a>
+                            <a class="nav__link" href="#">Доставка&nbsp;&ndash; оплата</a>
                         </li>
                         <li class="nav__item">
                             <a class="nav__link" href="#">Відгукі</a>
@@ -495,9 +1542,6 @@ title: home
                         </li>
                         <li class="nav__item">
                             <a class="nav__link" href="#">Контакти</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">Про магазин</a>
                         </li>
                     </ul>
                 </nav>

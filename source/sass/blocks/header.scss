@@ -166,6 +166,7 @@
   background-color: $yellow;
   border-radius: 50%;
   font-size: 14px;
+  line-height: 100%;
   font-weight: 400;
   color: $black;
   position: absolute;
@@ -178,7 +179,7 @@
 }
 
 .header__bottom {
-  min-height: 65px;
+  height: 65px;
   background-color: $yellow;
 }
 
@@ -191,8 +192,8 @@
   background: url('../img/bg.jpg') no-repeat center;
   background-size: cover;
 
-  padding: 16.5px 0;
   width: 191px;
+  height: 65px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,4 +201,107 @@
   font-family: 'Bebas Neue Cyrillic', sans-serif;
   font-size: 25px;
   color: $white;
+}
+
+@media (max-width: 1599px) {
+  .header__bottom-discount {
+    font-size: 22px;
+    width: 160px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .header__bottom-discount {
+    font-size: 20px;
+    width: 130px;
+  }
+
+  .header__form-input {
+    padding: 12px 50px 12px 20px;
+  }
+
+  .header__form-btn {
+    padding: 0 10px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .header__action {
+    margin-right: 10px;
+  }
+
+  .header__action-item + .header__action-item {
+    margin-left: 20px;
+  }
+
+  .header__form {
+    margin-right: 30px;
+  }
+
+  .header__logo-wrapper {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .header__bottom-discount {
+    font-size: 18px;
+    width: 110px;
+  }
+
+  .header__action-link--phone span {
+    display: none;
+  }
+
+  .header__action-icon__dropdown {
+    display: none;
+  }
+
+  .header__action-icon__phone {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  .header__action-icon__scale {
+    width: 29px;
+    height: 22px;
+  }
+
+  .header__action-icon__favourite {
+    width: 22px;
+    height: 19px;
+  }
+
+  .header__action-icon__bag {
+    width: 20px;
+    height: 22px;
+    margin: 0;
+  }
+
+  .header__action-bag__number {
+    min-width: 15px;
+    height: 15px;
+    font-size: 13px;
+    left: 11px;
+    top: -5px;
+  }
+
+  .header__action-link-bag__text {
+    display: none;
+  }
+}
+
+@media (max-width: 1099px) {
+  .header__bottom {
+    height: 60px;
+  }
+
+  .header__bottom-discount {
+    height: 60px;
+    font-size: 17px;
+  }
 }
