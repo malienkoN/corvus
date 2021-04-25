@@ -425,3 +425,20 @@
     width: 300px;
   }
 }
+
+@media (max-width: 991px) {
+  .dropdown__content,
+  .dropdown__submenu,
+  .dropdown__sub-submenu {
+    position: static;
+  }
+
+  .dropdown__submenu,
+  .dropdown__sub-submenu {
+    display: none;
+  }
+
+  .dropdown__btn {
+    display: none;
+  }
+}
