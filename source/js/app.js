@@ -9,7 +9,7 @@ $(document).ready(function () {
     $('.burger-mobile').click(function (event) {
         event.preventDefault();
 
-        $('.header__bottom').fadeToggle();
+        $('.header__bottom').toggleClass('active');
         $(this).toggleClass('active');
     })
 });
