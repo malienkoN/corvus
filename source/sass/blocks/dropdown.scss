@@ -469,7 +469,6 @@
   }
 
   .dropdown__text {
-    font-size: 16px;
 
     &:after {
       display: none;
@@ -512,5 +511,11 @@
 
   .dropdown__content-link .dropdown__text {
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .dropdown {
+    width: 100%;
   }
 }
