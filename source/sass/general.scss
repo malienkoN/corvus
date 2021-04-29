@@ -69,3 +69,21 @@ a {
     outline: none;
   }
 }
+
+@media (max-width: 991px) {
+  .main {
+    padding-top: 69px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    padding-top: 63px;
+  }
+}
+
+@media (max-width: 575px) {
+  .main {
+    padding-top: 50px;
+  }
+}
