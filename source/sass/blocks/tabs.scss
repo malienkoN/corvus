@@ -1,0 +1,41 @@
+.tabs__triggers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs__triggers-item {
+  font-size: 22px;
+  font-weight: 700;
+  color: $white;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: $yellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.4s ease-out;
+  }
+}
+
+.tabs__triggers-item--active {
+
+  &:after {
+    width: 100%;
+  }
+}
+
+.tabs__content-item {
+  display: none;
+  background-color: lightgreen;
+  padding: 20px;
+}
+
+.tabs__content-item--active {
+  display: block;
+}
