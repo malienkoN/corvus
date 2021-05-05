@@ -40,20 +40,21 @@ $(document).ready(function () {
 
     $('.tabs__triggers-item:first').click();
 
+
     new Swiper('.tabs-swiper', {
+        observer: true,
+        // observeSlideChildren: true,
+        observeParents: true,
         loop: true,
         slidesPerView: 4,
         spaceBetween: 30,
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-
-        // Navigation arrows
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
         },
     });
 });

@@ -1,4 +1,5 @@
 .tabs__triggers {
+  margin: 40px 0 60px;
   display: flex;
   justify-content: space-between;
 }
@@ -31,9 +32,23 @@
 }
 
 .tabs__content-item {
+  position: relative;
   display: none;
-  background-color: lightgreen;
-  padding: 20px;
+  padding: 0 20px;
+
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    color: $yellow;
+    font-size: 20px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .tabs__content-item--active {

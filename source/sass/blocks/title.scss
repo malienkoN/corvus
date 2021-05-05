@@ -1,0 +1,22 @@
+.title {
+  text-align: center;
+  font-family: 'Bebas Neue Cyrillic', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: $white;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 220px;
+    height: 12px;
+    background-color: $yellow;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    z-index: -1;
+  }
+}
