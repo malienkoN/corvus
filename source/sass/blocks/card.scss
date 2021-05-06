@@ -59,6 +59,11 @@
   align-items: center;
 }
 
+.card__price-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .card__price {
   margin-right: 13px;
   font-family: 'Bebas Neue Cyrillic', sans-serif;
@@ -96,9 +101,13 @@
   align-items: center;
 
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 1px;
+  right: 1px;
   z-index: 1;
+
+  li + li {
+    border-left: 1px solid $white;
+  }
 }
 
 .card__action-link {
@@ -108,7 +117,6 @@
   align-items: center;
   justify-content: center;
   background-color: #e0e0e0;
-  border: 1px solid $white;
   transition: background-color .2s linear;
 
   &--cart {

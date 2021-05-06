@@ -1,5 +1,12 @@
-.section--tabs {
-  margin-bottom: 190px;
+.section {
+
+  &--tabs {
+    margin-bottom: 190px;
+  }
+
+  &--about {
+    margin-bottom: 140px;
+  }
 }
 
 @media (max-width: 767px) {
