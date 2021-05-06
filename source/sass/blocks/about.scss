@@ -1,0 +1,44 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-end;
+}
+
+.about__img-2 {
+  position: relative;
+  margin-top: -35%;
+  margin-left: 11%;
+}
+
+.about__title {
+  margin-bottom: 40px;
+  width: max-content;
+  font-size: 35px;
+  font-weight: 700;
+  position: relative;
+}
+
+.about__suptitle {
+  position: absolute;
+  bottom: 0;
+  right: -15%;
+
+  font-family: 'Bebas Neue Cyrillic', sans-serif;
+  font-size: 370px;
+  font-weight: 400;
+  line-height: 1;
+  color: #292929;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $white;
+  opacity: .16;
+  user-select: none;
+}
+
+.about__text {
+  margin-bottom: 70px;
+  font-size: 19px;
+
+  p + p {
+    margin-top: 15px;
+  }
+}
