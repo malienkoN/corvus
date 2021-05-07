@@ -6,3 +6,40 @@
   grid-column-gap: 30px;
   grid-row-gap: 25px;
 }
+
+@media (max-width: 1499px) {
+  .recommended {
+    grid-column-gap: 25px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .recommended {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1399px) {
+  .recommended {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  .recommended {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .recommended {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .recommended {
+    grid-template-columns: 1fr;
+  }
+}

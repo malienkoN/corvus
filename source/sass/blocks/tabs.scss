@@ -54,3 +54,44 @@
 .tabs__content-item--active {
   display: block;
 }
+
+@media (max-width: 1439px) {
+  .tabs__content-item {
+    padding: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .tabs__content-item {
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+      color: $yellow;
+      font-size: 15px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 35px;
+      height: 35px;
+    }
+
+    .swiper-button-next {
+      right: 2px;
+    }
+
+    .swiper-button-prev {
+      left: 2px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .tabs__content-item {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+  }
+}

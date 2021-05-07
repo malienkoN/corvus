@@ -216,3 +216,89 @@
     }
   }
 }
+
+@media (max-width: 1599px) {
+  .card__action-link {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card__price {
+    margin-right: 10px;
+    font-size: 28px;
+  }
+
+  .card__strike {
+    font-size: 20px;
+  }
+
+  .card__content {
+    padding: 30px 5px 0;
+  }
+
+  .card {
+    padding: 15px 10px 10px;
+  }
+}
+
+@media (max-width: 1059px) {
+  .card__action {
+    position: static;
+  }
+
+  .card__footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card__title {
+    margin-bottom: 20px;
+  }
+
+  .card__content {
+    padding: 25px 5px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .card__title {
+    font-size: 15px;
+  }
+
+  .card__content {
+    padding: 20px 0 0;
+  }
+
+  .card__price {
+    font-size: 26px;
+  }
+
+  .card__strike {
+    font-size: 18px;
+  }
+
+  .card__offers-item {
+    font-size: 17px;
+
+    &:after {
+      border-width: 13px;
+      right: -25px;
+    }
+  }
+
+  .card__offers {
+    top: 10px;
+  }
+}
+
+@media (max-width: 899px) {
+  .card {
+    padding: 10px 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    padding: 10px;
+  }
+}
