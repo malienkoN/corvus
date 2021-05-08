@@ -1,10 +1,11 @@
 .tabs__triggers {
-  margin: 40px 0 60px;
+  margin: 45px 0 65px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.tabs__triggers-item {
+.tabs__triggers-item > span {
   font-size: 22px;
   font-weight: 700;
   color: $white;
@@ -24,7 +25,7 @@
   }
 }
 
-.tabs__triggers-item--active {
+.tabs__triggers-item--active > span {
 
   &:after {
     width: 100%;
@@ -55,9 +56,23 @@
   display: block;
 }
 
+@media (max-width: 1561px) {
+  .tabs__triggers-item {
+    margin: 15px 0;
+    width: 33.33333%;
+    text-align: center;
+  }
+}
+
 @media (max-width: 1439px) {
   .tabs__content-item {
     padding: 0;
+  }
+}
+
+@media (max-width: 1399px) {
+  .tabs__triggers-item > span {
+    font-size: 20px;
   }
 }
 
@@ -84,6 +99,24 @@
       left: 2px;
     }
   }
+
+  .tabs__triggers-item > span {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tabs__triggers-item {
+    width: 50%;
+  }
+
+  .tabs__triggers-item > span:after {
+    display: none;
+  }
+
+  .tabs__triggers-item--active > span {
+    color: $yellow;
+  }
 }
 
 @media (max-width: 575px) {
@@ -93,5 +126,25 @@
     .swiper-button-prev {
       display: none;
     }
+  }
+
+  .tabs__triggers-item {
+    margin: 10px 0;
+  }
+
+  .tabs__triggers-item > span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 487px) {
+  .tabs__triggers-item > span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 359px) {
+  .tabs__triggers-item {
+    width: 100%;
   }
 }

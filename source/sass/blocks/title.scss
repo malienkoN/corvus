@@ -1,7 +1,7 @@
 .title {
   text-align: center;
   font-family: 'Bebas Neue Cyrillic', sans-serif;
-  font-size: 40px;
+  font-size: 41px;
   font-weight: 400;
   color: $white;
   position: relative;
@@ -18,5 +18,35 @@
     transform: translateX(-50%);
     bottom: 5%;
     z-index: -1;
+  }
+}
+
+@media (max-width: 1399px) {
+  .title {
+    font-size: 35px;
+
+    &:after {
+      height: 8px;
+      bottom: 10%;
+      width: 200px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 575px) {
+  .title {
+    font-size: 33px;
+  }
+
+  .title:after {
+    height: 6px;
+    bottom: 11%;
+    width: 180px;
   }
 }

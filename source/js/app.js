@@ -47,26 +47,29 @@ $(document).ready(function () {
         observeParents: true,
         loop: true,
         slidesPerView: 1,
-        spaceBetween: 20,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
         breakpoints: {
-            567: {
-              slidesPerView: 2,
+            576: {
+                spaceBetween: 20,
+                slidesPerView: 2,
             },
-            767: {
-              slidesPerView: 3,
+            768: {
+                spaceBetween: 20,
+                slidesPerView: 3,
             },
-            991: {
+            992: {
                 spaceBetween: 25,
+                slidesPerView: 3,
             },
             1399: {
                 slidesPerView: 4,
             },
             1499: {
                 spaceBetween: 30,
+                slidesPerView: 4,
             },
         },
     });
