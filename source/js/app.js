@@ -46,7 +46,6 @@ $(document).ready(function () {
         // observeSlideChildren: true,
         observeParents: true,
         loop: true,
-        slidesPerView: 1,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',

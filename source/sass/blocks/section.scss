@@ -13,6 +13,15 @@
   }
 }
 
+@media (max-width: 991px) {
+  .section {
+
+    &--tabs {
+      margin-bottom: 140px;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .section--intro .container {
     padding: 0;
