@@ -19,6 +19,22 @@
     bottom: 5%;
     z-index: -1;
   }
+
+  &--black {
+    color: $black;
+  }
+
+  &--z {
+
+    &:after {
+      z-index: 0;
+    }
+
+    span {
+      position: relative;
+      z-index: 1;
+    }
+  }
 }
 
 @media (max-width: 1399px) {
