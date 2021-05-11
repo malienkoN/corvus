@@ -1,10 +1,16 @@
 .recommended {
   margin: 100px 0 0;
-  padding: 0 20px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 376px);
   grid-column-gap: 30px;
   grid-row-gap: 25px;
+  justify-content: center;
+}
+
+@media (max-width: 1649px) {
+  .recommended {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media (max-width: 1499px) {
