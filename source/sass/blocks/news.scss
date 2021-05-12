@@ -1,4 +1,10 @@
 .news {
+  text-align: center;
+}
+
+.news__inner {
+  padding: 120px 0 70px;
+  text-align: left;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 30px;
@@ -59,6 +65,26 @@
   }
 }
 
+.news__banner-title {
+  margin-bottom: 30px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.news__banner-text {
+  margin-bottom: 30px;
+}
+
+.news__banner-link {
+  margin-left: 20px;
+  color: $yellow;
+  font-weight: 700;
+
+  svg {
+    margin-left: 10px;
+  }
+}
+
 .news__side {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -67,7 +93,7 @@
 
 .news__side-item {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto auto;
   grid-column-gap: 30px;
   align-items: center;
 }
@@ -91,6 +117,7 @@
 }
 
 .news__side-item__text {
+  margin-bottom: 5px;
   font-size: 14px;
 }
 
@@ -99,4 +126,105 @@
   font-size: 14px;
   font-weight: 700;
   color: $yellow;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 1399px) {
+
+  .news__side-item__title {
+    font-size: 16px;
+  }
+
+  .news__side-item {
+    grid-column-gap: 20px;
+    align-items: flex-start;
+  }
+
+  .news__side {
+    grid-row-gap: 20px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .news__inner {
+    grid-column-gap: 25px;
+  }
+
+  .news__side-item {
+    grid-column-gap: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .news__inner {
+    grid-template-columns: 1fr;
+    grid-row-gap: 50px;
+  }
+
+  .news__side-item {
+    grid-column-gap: 30px;
+  }
+
+  .news__side {
+    grid-row-gap: 30px;
+  }
+
+  .news__side-item__content {
+    justify-content: space-between;
+  }
+
+  .news__side-item__link {
+    margin-top: 0;
+  }
+
+  .news__side-item__title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .news__side-item__title {
+    font-size: 17px;
+  }
+
+  .news__side-item {
+    grid-column-gap: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .news__banner {
+    height: 400px;
+  }
+
+  .news__side-item {
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+  }
+
+  .news__banner:hover .news__banner-content {
+    top: 5%;
+  }
+
+  .news__banner-content {
+    padding: 0 15px;
+    top: 88%;
+  }
+
+  .news__banner-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 374px) {
+  .news__banner-title {
+    margin-bottom: 25px;
+  }
+
+  .news__banner-text {
+    margin-bottom: 25px;
+  }
 }
