@@ -188,15 +188,14 @@
     font-size: 15px;
   }
 
-  //.reviews__item-content {
-  //  padding: 0 10px;
-  //  top: 85%;
-  //}
+  .reviews__item-content {
+    top: 86%;
+  }
 }
 
 @media (max-width: 374px) {
   .reviews__item-title {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   .reviews__item-text {
@@ -205,6 +204,9 @@
 
   .reviews__item-content {
     padding: 0 10px;
-    top: 85%;
+  }
+
+  .reviews__item:hover .reviews__item-content {
+    top: 3%;
   }
 }
