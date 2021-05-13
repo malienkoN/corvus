@@ -1,0 +1,143 @@
+.footer .social__link {
+  width: 38px;
+  height: 38px;
+}
+
+.footer {
+  background-color: $black;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__left {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+
+  background: url('../img/footer-left-background-img.png') no-repeat right top;
+  background-size: contain;
+}
+
+.footer__logo-wrapper {
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo {
+  margin-right: 15px;
+}
+
+.footer__logo-text {
+  max-width: 160px;
+  border-left: 1px solid $white;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #919191;
+}
+
+.footer__left-text {
+  margin-bottom: 44px;
+  color: #919191;
+  max-width: 370px;
+}
+
+.footer__title {
+  margin-bottom: 30px;
+  font-family: 'Bebas Neue Cyrillic', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.footer__category-list {
+
+  li + li {
+    margin-top: 6px;
+  }
+
+  a {
+    text-transform: uppercase;
+    color: #919191;
+    transition: color .2s linear;
+
+    &:hover {
+      color: lighten(#919191, 20%);
+    }
+  }
+}
+
+.footer__right {
+  width: 55%;
+  padding: 100px 60px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__right-time {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
+.footer__right-list {
+  margin-bottom: 20px;
+
+  li + li {
+    margin-top: 5px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    color: #919191;
+    font-weight: 700;
+    font-size: 16px;
+    transition: color .2s linear;
+
+    svg {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      color: lighten(#919191, 20%);
+    }
+  }
+}
+
+.footer__right-form__input {
+  margin-bottom: 15px;
+  width: 240px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  color: #707070;
+  padding: 14px 15px;
+  background-color: $white;
+  border: 1px solid #707070;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.footer__right-form__btn {
+  width: 100%;
+  padding: 13px 0;
+  display: block;
+  background-color: $yellow;
+  border: 1px solid #707070;
+
+  font-size: 16px;
+  color: $black;
+  transition: background-color .2s linear;
+
+  &:hover {
+    background-color: darken($yellow, 5%);
+  }
+}

@@ -72,4 +72,41 @@ $(document).ready(function () {
             },
         },
     });
+
+    //map
+    const map = L.map('map')
+        .setView({
+            lat: 48.516773,
+            lng: 34.606880,
+        }, 15);
+
+    L.tileLayer(
+        'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png',
+        {
+            attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+        },
+    ).addTo(map);
+
+    const mainPinIcon = L.icon({
+        iconUrl: 'img/map-pin.png',
+        iconSize: [33, 44],
+        iconAnchor: [15.5, 44],
+    });
+
+    const mainPinMarker = L.marker(
+        {
+            lat: 48.5162880947064,
+            lng: 34.603859782218941,
+        },
+        {
+            draggable: true,
+            icon: mainPinIcon,
+        },
+    );
+
+    mainPinMarker.addTo(map);
+
+    mainPinMarker.on('moveend', (evt) => {
+        console.log(evt.target.getLatLng());
+    });
 });
