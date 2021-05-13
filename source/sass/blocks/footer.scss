@@ -8,6 +8,7 @@
 }
 
 .footer__inner {
+  margin-bottom: 25px;
   display: flex;
   justify-content: space-between;
 }
@@ -139,5 +140,43 @@
 
   &:hover {
     background-color: darken($yellow, 5%);
+  }
+}
+
+.footer__text {
+  padding-bottom: 12px;
+}
+
+.footer__text p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #808080;
+  height: 72px;
+  overflow: hidden;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: linear-gradient(to top, $black, rgba(0, 0, 0, 0));
+    background: -webkit-linear-gradient(to top, $black, rgba(0, 0, 0, 0));
+  }
+}
+
+.footer__text a {
+  font-size: 14px;
+  color: $yellow;
+}
+
+.footer__text.show-content p {
+  height: auto;
+
+  &:after {
+    background: none;
   }
 }

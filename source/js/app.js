@@ -109,4 +109,13 @@ $(document).ready(function () {
     mainPinMarker.on('moveend', (evt) => {
         console.log(evt.target.getLatLng());
     });
+
+    //read-more
+    $('#read-more').click(function (event) {
+        event.preventDefault();
+
+        $(this).parent().toggleClass('show-content');
+        const replaceText = $(this).parent().hasClass('show-content') ? 'Приховати' : 'Читати далі';
+        $(this).text(replaceText);
+    });
 });

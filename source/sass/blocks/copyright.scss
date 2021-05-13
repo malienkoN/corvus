@@ -1,0 +1,19 @@
+.copyright {
+  background-color: #333333;
+}
+
+.copyright__inner {
+  height: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__text {
+  color: #a8a8a8;
+  font-size: 14px;
+
+  a {
+    color: $yellow;
+  }
+}
