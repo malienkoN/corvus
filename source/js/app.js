@@ -99,16 +99,11 @@ $(document).ready(function () {
             lng: 34.603859782218941,
         },
         {
-            draggable: true,
             icon: mainPinIcon,
         },
     );
 
     mainPinMarker.addTo(map);
-
-    mainPinMarker.on('moveend', (evt) => {
-        console.log(evt.target.getLatLng());
-    });
 
     //read-more
     $('#read-more').click(function (event) {

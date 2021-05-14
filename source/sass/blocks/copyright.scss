@@ -17,3 +17,22 @@
     color: $yellow;
   }
 }
+
+@media (max-width: 991px) {
+  .copyright__text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 869px) {
+  .copyright__inner {
+    padding: 8px 0;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .copyright__text {
+    margin-bottom: 10px;
+  }
+}

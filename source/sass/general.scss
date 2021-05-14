@@ -95,6 +95,24 @@ a {
   }
 }
 
+#map {
+  width: 580px;
+  height: 250px;
+  z-index: 1;
+
+  @media (max-width: 1461px) {
+    width: 500px;
+  }
+
+  @media (max-width: 799px) {
+    width: 480px;
+  }
+
+  @media (max-width: 575px) {
+    width: 100%;
+  }
+}
+
 @media (max-width: 991px) {
   .main {
     padding-top: 69px;
