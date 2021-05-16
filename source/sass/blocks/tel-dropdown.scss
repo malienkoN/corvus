@@ -1,12 +1,11 @@
 .tel-dropdown {
-  display: none;
   width: 220px;
   padding: 20px 24px 15px 17px;
   background-color: #3c3c3c;
   position: absolute;
   left: -17px;
   top: 150%;
-  z-index: 3;
+  z-index: 99;
 }
 
 .tel-dropdown__item + .tel-dropdown__item {
@@ -22,4 +21,21 @@
 
 .tel-dropdown__icon {
   margin-right: 12px;
+}
+
+@media (max-width: 1199px) {
+  .tel-dropdown {
+    top: 165%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 991px) {
+  .tel-dropdown {
+    position: static;
+    width: auto;
+    padding: 0;
+    transform: none;
+  }
 }

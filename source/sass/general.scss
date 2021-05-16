@@ -14,6 +14,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+@media (max-width: 991px) {
+  body.lock-mobile {
+    overflow: hidden;
+  }
+}
+
 .container {
   width: 100%;
   max-width: 1740px;

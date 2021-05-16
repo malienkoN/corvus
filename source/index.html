@@ -100,34 +100,40 @@ title: home
                                 <use xlink:href="img/sprite.svg#icon-dropdown"></use>
                             </svg>
                         </a>
+                        <!-- modal-fade -->
+                        <div class="modal-fade">
+                            <div class="modal modal--tel">
+                                <button class="modal-close" type="button" aria-label="Закрыть"></button>
 
-                        <!-- tel-dropdown -->
-                        <ul class="tel-dropdown">
-                            <li class="tel-dropdown__item">
-                                <a class="tel-dropdown__link" href="tel:380934142016">
-                                    <svg class="tel-dropdown__icon" width="15" height="15" viewBox="0 0 15 15">
-                                        <use xlink:href="img/sprite.svg#icon-phone"></use>
-                                    </svg>
-                                    +38 (093) 414-20-16
-                                </a>
-                            </li>
-                            <li class="tel-dropdown__item">
-                                <a class="tel-dropdown__link" href="tel:380934142016">
-                                    <svg class="tel-dropdown__icon" width="15" height="15" viewBox="0 0 15 15">
-                                        <use xlink:href="img/sprite.svg#icon-phone"></use>
-                                    </svg>
-                                    +38 (093) 414-20-16
-                                </a>
-                            </li>
-                            <li class="tel-dropdown__item">
-                                <a class="tel-dropdown__link" href="tel:380934142016">
-                                    <svg class="tel-dropdown__icon" width="15" height="15" viewBox="0 0 15 15">
-                                        <use xlink:href="img/sprite.svg#icon-phone"></use>
-                                    </svg>
-                                    +38 (093) 414-20-16
-                                </a>
-                            </li>
-                        </ul>
+                                <!-- tel-dropdown -->
+                                <ul class="tel-dropdown">
+                                    <li class="tel-dropdown__item">
+                                        <a class="tel-dropdown__link" href="tel:380934142016">
+                                            <svg class="tel-dropdown__icon" width="15" height="15" viewBox="0 0 15 15">
+                                                <use xlink:href="img/sprite.svg#icon-phone"></use>
+                                            </svg>
+                                            +38 (093) 414-20-16
+                                        </a>
+                                    </li>
+                                    <li class="tel-dropdown__item">
+                                        <a class="tel-dropdown__link" href="tel:380934142016">
+                                            <svg class="tel-dropdown__icon" width="15" height="15" viewBox="0 0 15 15">
+                                                <use xlink:href="img/sprite.svg#icon-phone"></use>
+                                            </svg>
+                                            +38 (093) 414-20-16
+                                        </a>
+                                    </li>
+                                    <li class="tel-dropdown__item">
+                                        <a class="tel-dropdown__link" href="tel:380934142016">
+                                            <svg class="tel-dropdown__icon" width="15" height="15" viewBox="0 0 15 15">
+                                                <use xlink:href="img/sprite.svg#icon-phone"></use>
+                                            </svg>
+                                            +38 (093) 414-20-16
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
 
                     <li class="header__action-item header__action-item--scale">
@@ -147,13 +153,109 @@ title: home
                     </li>
 
                     <li class="header__action-item">
-                        <a class="header__action-link" href="#">
+                        <a class="header__action-link" id="cart-dropdown__trigger" href="#">
                             <svg class="header__action-icon__bag" width="25" height="27" viewBox="0 0 25 27">
                                 <use xlink:href="img/sprite.svg#icon-bag"></use>
                             </svg>
                             <span class="header__action-bag__number">3</span>
                             <span class="header__action-link-bag__text">Кошик</span>
                         </a>
+
+                        <!-- modal-fade -->
+                        <div class="modal-fade">
+                            <div class="modal modal--cart">
+                                <button class="modal-close" type="button" aria-label="Закрыть"></button>
+
+                                <!-- cart-dropdown -->
+                                <div class="cart-dropdown">
+                                    <div class="cart-dropdown__items">
+                                        <div class="cart-dropdown__item">
+                                            <div class="cart-dropdown__item-col">
+                                                <a href="#">
+                                                    <img src="img/cart-img.jpg" alt="">
+                                                </a>
+                                                <a class="cart-dropdown__item-title" href="#">
+                                                    Карабин Mauser M18&nbsp;LONGRANGE кал.&nbsp;6.5
+                                                    Creedmoor. Ствол&nbsp;&mdash; 62&nbsp;см. Резьба М18&times;1.
+                                                    Шасси Oryx
+                                                </a>
+                                            </div>
+
+                                            <div class="cart-dropdown__item-col">
+                                                <p class="cart-dropdown__item-amount">1 шт</p>
+                                                <p class="cart-dropdown__item-price">25000 грн.</p>
+                                                <button class="btn cart-dropdown__item-remove" type="button" aria-label="Убрать товар из корзины"></button>
+                                            </div>
+                                        </div>
+
+                                        <div class="cart-dropdown__item">
+                                            <div class="cart-dropdown__item-col">
+                                                <a href="#">
+                                                    <img src="img/cart-img.jpg" alt="">
+                                                </a>
+                                                <a class="cart-dropdown__item-title" href="#">
+                                                    Карабин Mauser M18&nbsp;LONGRANGE кал.&nbsp;6.5
+                                                    Creedmoor. Ствол&nbsp;&mdash; 62&nbsp;см. Резьба М18&times;1.
+                                                    Шасси Oryx
+                                                </a>
+                                            </div>
+
+                                            <div class="cart-dropdown__item-col">
+                                                <p class="cart-dropdown__item-amount">1 шт</p>
+                                                <p class="cart-dropdown__item-price">25000 грн.</p>
+                                                <button class="btn cart-dropdown__item-remove" type="button" aria-label="Убрать товар из корзины"></button>
+                                            </div>
+                                        </div>
+
+                                        <div class="cart-dropdown__item">
+                                            <div class="cart-dropdown__item-col">
+                                                <a href="#">
+                                                    <img src="img/cart-img.jpg" alt="">
+                                                </a>
+                                                <a class="cart-dropdown__item-title" href="#">
+                                                    Карабин Mauser M18&nbsp;LONGRANGE кал.&nbsp;6.5
+                                                    Creedmoor. Ствол&nbsp;&mdash; 62&nbsp;см. Резьба М18&times;1.
+                                                    Шасси Oryx
+                                                </a>
+                                            </div>
+
+                                            <div class="cart-dropdown__item-col">
+                                                <p class="cart-dropdown__item-amount">1 шт</p>
+                                                <p class="cart-dropdown__item-price">25000 грн.</p>
+                                                <button class="btn cart-dropdown__item-remove" type="button" aria-label="Убрать товар из корзины"></button>
+                                            </div>
+                                        </div>
+
+                                        <div class="cart-dropdown__item">
+                                            <div class="cart-dropdown__item-col">
+                                                <a href="#">
+                                                    <img src="img/cart-img.jpg" alt="">
+                                                </a>
+                                                <a class="cart-dropdown__item-title" href="#">
+                                                    Карабин Mauser M18&nbsp;LONGRANGE кал.&nbsp;6.5
+                                                    Creedmoor. Ствол&nbsp;&mdash; 62&nbsp;см. Резьба М18&times;1.
+                                                    Шасси Oryx
+                                                </a>
+                                            </div>
+
+                                            <div class="cart-dropdown__item-col">
+                                                <p class="cart-dropdown__item-amount">1 шт</p>
+                                                <p class="cart-dropdown__item-price">25000 грн.</p>
+                                                <button class="btn cart-dropdown__item-remove" type="button" aria-label="Убрать товар из корзины"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cart-dropdown__footer">
+                                        <p class="cart-dropdown__total-price">
+                                            Загальна сума: <span>75000 грн.</span>
+                                        </p>
+
+                                        <a class="cart-dropdown__to-order btn" href="#">Оформити замовлення</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
