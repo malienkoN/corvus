@@ -14,6 +14,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 @media (max-width: 991px) {
   body.lock-mobile {
     overflow: hidden;
@@ -116,6 +120,20 @@ a {
 
   @media (max-width: 575px) {
     width: 100%;
+  }
+}
+
+#mapPopup {
+  width: 100%;
+  height: 735px;
+  z-index: 1;
+
+  @media (max-width: 1199px) {
+    height: 600px;
+  }
+
+  @media (max-width: 991px) {
+    height: 100vh;
   }
 }
 

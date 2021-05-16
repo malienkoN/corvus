@@ -19,6 +19,10 @@
 }
 
 @media (max-width: 991px) {
+  .copyright {
+    margin-bottom: 57px;
+  }
+
   .copyright__text {
     font-size: 13px;
   }
@@ -34,5 +38,11 @@
 
   .copyright__text {
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .copyright {
+    margin-bottom: 51px;
   }
 }

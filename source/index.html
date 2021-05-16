@@ -46,7 +46,7 @@ title: home
                 </ul>
 
                 <div class="header__top-action">
-                    <button class="btn header__top-btn" type="button">
+                    <button class="btn header__top-btn" id="mapPopup-trigger" type="button">
                         <svg width="10" height="16" viewBox="0 0 10 16">
                             <use xlink:href="img/sprite.svg#icon-pin"></use>
                         </svg>
@@ -1674,6 +1674,51 @@ title: home
         </div>
     </div>
 </header>
+
+<div class="fixed-nav">
+    <ul class="fixed-nav__list">
+        <li>
+            <a href="">
+                <svg width="21.673" height="23.97" viewBox="0 0 21.673 23.97">
+                    <use xlink:href="img/sprite.svg#icon-fixed-nav-home"></use>
+                </svg>
+                Головна
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <svg width="24.188" height="20.499" viewBox="0 0 24.188 20.499">
+                    <use xlink:href="img/sprite.svg#icon-fixed-nav-chat"></use>
+                </svg>
+                Зв’язок
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <svg width="21.543" height="21.543" viewBox="0 0 21.543 21.543">
+                    <use xlink:href="img/sprite.svg#icon-fixed-nav-search"></use>
+                </svg>
+                Пошук
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <svg width="20.434" height="22.593" viewBox="0 0 20.434 22.593">
+                    <use xlink:href="img/sprite.svg#icon-fixed-nav-bag"></use>
+                </svg>
+                Кошик
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <svg width="26.251" height="26.246" viewBox="0 0 26.251 26.246">
+                    <use xlink:href="img/sprite.svg#icon-fixed-nav-user"></use>
+                </svg>
+                Акаунт
+            </a>
+        </li>
+    </ul>
+</div>
 
 <section class="section section--intro">
     <div class="container">
@@ -5089,3 +5134,12 @@ title: home
         </div>
     </div>
 </div>
+
+<div class="popup-fade">
+    <div class="popup">
+        <button class="popup-close" type="button" aria-label="Закрыть"></button>
+
+        <div id="mapPopup"></div>
+    </div>
+</div>
+

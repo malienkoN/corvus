@@ -135,6 +135,66 @@ $(document).ready(function () {
 
     mainPinMarker.addTo(map);
 
+    const mapPopup = L.map('mapPopup')
+        .setView({
+            lat: 48.516773,
+            lng: 34.606880,
+        }, 15);
+
+    L.tileLayer(
+        'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png',
+        {
+            attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+        },
+    ).addTo(mapPopup);
+
+    const mainPinIconModal = L.icon({
+        iconUrl: 'img/map-pin.png',
+        iconSize: [33, 44],
+        iconAnchor: [15.5, 44],
+    });
+
+    const mainPinMarkerModal = L.marker(
+        {
+            lat: 48.5162880947064,
+            lng: 34.603859782218941,
+        },
+        {
+            icon: mainPinIconModal,
+        },
+    );
+
+    mainPinMarkerModal.addTo(mapPopup);
+
+    $('#mapPopup-trigger').click(function (event) {
+        event.preventDefault();
+
+        $('.popup-fade').toggleClass('show');
+        $('body').toggleClass('lock');
+    });
+
+    $('.popup-close').click( function (event) {
+        event.preventDefault();
+
+        $('.popup-fade').removeClass('show');
+        $('body').removeClass('lock');
+    }) ;
+
+    $(document).keydown(function(e) {
+        if (e.keyCode === 27) {
+            e.stopPropagation();
+            $('.popup-fade').removeClass('show');
+            $('body').removeClass('lock');
+        }
+    });
+
+    $('.popup-fade').click(function(e) {
+        if ($(e.target).closest('.popup').length === 0) {
+            $(this).removeClass('show');
+            $('body').removeClass('lock');
+        }
+    });
+
     //read-more
     $('#read-more').click(function (event) {
         event.preventDefault();
