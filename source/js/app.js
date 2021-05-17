@@ -166,7 +166,7 @@ $(document).ready(function () {
 
     mainPinMarkerModal.addTo(mapPopup);
 
-    $('#mapPopup-trigger').click(function (event) {
+    $('.mapPopup-trigger').click(function (event) {
         event.preventDefault();
 
         $('.popup-fade').toggleClass('show');

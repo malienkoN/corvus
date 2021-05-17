@@ -14,6 +14,10 @@
 .header__top-action {
   display: flex;
   align-items: center;
+
+  svg {
+    fill: $white;
+  }
 }
 
 .header__top-btn,
@@ -204,6 +208,37 @@
   color: $white;
 }
 
+.header__action-icon__scale {
+  fill: $white;
+}
+
+.header__action-icon__favourite {
+  fill: $white;
+}
+
+.header__bottom-additional {
+  padding: 20px 10px 10px;
+  width: 100%;
+  display: none;
+  color: #3c3c3c;
+
+  svg {
+    margin-right: 10px;
+    width: 15%;
+    fill: #3c3c3c;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+  }
+
+  li + li {
+    margin-top: 15px;
+  }
+}
+
 @media (max-width: 1599px) {
   .header__bottom-discount {
     font-size: 22px;
@@ -379,6 +414,10 @@
 
   .header__form-btn {
     padding: 0 5px;
+  }
+
+  .header__bottom-additional {
+    display: block;
   }
 }
 
