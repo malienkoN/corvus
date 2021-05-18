@@ -21,21 +21,6 @@ $(document).ready(function () {
         $('body').removeClass('lock-mobile');
     });
 
-    // $(document).keydown(function(e) {
-    //     if (e.keyCode === 27) {
-    //         e.stopPropagation();
-    //         $('.modal-fade').removeClass('show');
-    //         $('body').removeClass('lock-mobile');
-    //     }
-    // });
-    //
-    // $('.modal-fade').click(function(e) {
-    //     if ($(e.target).closest('.modal').length === 0) {
-    //         $(this).removeClass('show');
-    //         $('body').removeClass('lock-mobile');
-    //     }
-    // });
-
     $('.burger-mobile').click(function (event) {
         event.preventDefault();
 
@@ -106,8 +91,8 @@ $(document).ready(function () {
     //map
     const map = L.map('map')
         .setView({
-            lat: 48.516773,
-            lng: 34.606880,
+            lat: 48.50446,
+            lng: 34.61024,
         }, 15);
 
     L.tileLayer(
@@ -119,14 +104,14 @@ $(document).ready(function () {
 
     const mainPinIcon = L.icon({
         iconUrl: 'img/map-pin.png',
-        iconSize: [33, 44],
-        iconAnchor: [15.5, 44],
+        iconSize: [30, 47],
+        iconAnchor: [15, 47],
     });
 
     const mainPinMarker = L.marker(
         {
-            lat: 48.5162880947064,
-            lng: 34.603859782218941,
+            lat: 48.50446,
+            lng: 34.61024,
         },
         {
             icon: mainPinIcon,
@@ -134,11 +119,12 @@ $(document).ready(function () {
     );
 
     mainPinMarker.addTo(map);
+    mainPinMarker.bindPopup("проспект Свободи,<br> 75, Кам'янське");
 
     const mapPopup = L.map('mapPopup')
         .setView({
-            lat: 48.516773,
-            lng: 34.606880,
+            lat: 48.50446,
+            lng: 34.61024,
         }, 15);
 
     L.tileLayer(
@@ -148,23 +134,24 @@ $(document).ready(function () {
         },
     ).addTo(mapPopup);
 
-    const mainPinIconModal = L.icon({
+    const mainPinIconPopup = L.icon({
         iconUrl: 'img/map-pin.png',
-        iconSize: [33, 44],
-        iconAnchor: [15.5, 44],
+        iconSize: [30, 47],
+        iconAnchor: [15, 47],
     });
 
-    const mainPinMarkerModal = L.marker(
+    const mainPinMarkerPopup = L.marker(
         {
-            lat: 48.5162880947064,
-            lng: 34.603859782218941,
+            lat: 48.50446,
+            lng: 34.61024,
         },
         {
-            icon: mainPinIconModal,
+            icon: mainPinIconPopup,
         },
     );
 
-    mainPinMarkerModal.addTo(mapPopup);
+    mainPinMarkerPopup.addTo(mapPopup);
+    mainPinMarkerPopup.bindPopup("проспект Свободи,<br> 75, Кам'янське");
 
     $('.mapPopup-trigger').click(function (event) {
         event.preventDefault();
