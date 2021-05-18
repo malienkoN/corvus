@@ -7,6 +7,27 @@ $(document).ready(function () {
         $('body').toggleClass('lock-mobile');
     });
 
+    $('#fixed-nav__tel-popup').click(function (event) {
+        event.preventDefault();
+
+        $('.modal-fade--tel-for-fixed').toggleClass('show');
+        $('body').toggleClass('lock-mobile');
+    });
+
+    $('#fixed-nav__cart-popup').click(function (event) {
+        event.preventDefault();
+
+        $('.modal-fade--cart-for-fixed').toggleClass('show');
+        $('body').toggleClass('lock-mobile');
+    });
+
+    $('#fixed-nav__search-popup').click(function (event) {
+        event.preventDefault();
+
+        $('.header__form-popup-fade').toggleClass('show');
+        $('body').toggleClass('lock-mobile');
+    });
+
     $('#cart-dropdown__trigger').click(function (event) {
         event.preventDefault();
 
@@ -18,6 +39,20 @@ $(document).ready(function () {
         event.preventDefault();
 
         $(this).parents('.modal-fade').removeClass('show');
+        $('body').removeClass('lock-mobile');
+    });
+
+    $('#search-popup__trigger').click(function (event) {
+        event.preventDefault();
+
+        $('.header__form-popup-fade').toggleClass('show');
+        $('body').toggleClass('lock-mobile');
+    });
+
+    $('.header__form-close').click(function (event) {
+        event.preventDefault();
+
+        $(this).parents('.header__form-popup-fade').removeClass('show');
         $('body').removeClass('lock-mobile');
     });
 
