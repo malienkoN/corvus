@@ -367,7 +367,7 @@
   }
 
   .header__action {
-    margin-right: 10px;
+    margin: 0 10px 0 auto;
   }
 
   .header__action-item--scale,
@@ -386,6 +386,7 @@
 
   .header__middle-inner {
     padding: 5px 0;
+    justify-content: flex-start;
   }
 
   .header__bottom {
@@ -518,7 +519,7 @@
   }
 
   .header__action {
-    margin: 0;
+    margin: 0 0 0 auto;
   }
 
   .header__form-popup-fade {

@@ -7,7 +7,7 @@
   text-align: left;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 30px;
+  grid-gap: 30px;
 }
 
 .reviews__item {
@@ -112,7 +112,6 @@
 @media (max-width: 1199px) {
   .reviews__inner {
     grid-template-columns: 1fr 1fr;
-    grid-row-gap: 30px;
   }
 
   .reviews__item-title {
@@ -131,8 +130,7 @@
 
 @media (max-width: 991px) {
   .reviews__inner {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-gap: 20px;
   }
 
   .reviews__item-title {
