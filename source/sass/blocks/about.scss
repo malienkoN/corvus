@@ -80,6 +80,27 @@
   }
 }
 
+.about__text-overflow {
+  padding: 5px 10px 0 0;
+  height: 380px;
+  overflow-y: auto;
+
+  p + p {
+    margin-top: 15px;
+  }
+}
+
+.about__text-overflow::-webkit-scrollbar {
+  background-color: #ffffff;
+  width: 6px;
+  border: 2px solid #292929;
+}
+
+.about__text-overflow::-webkit-scrollbar-thumb {
+  background-color: $yellow;
+  border-radius: 50px;
+}
+
 @media (max-width: 1599px) {
   .about__img-2 {
     margin-left: 0;

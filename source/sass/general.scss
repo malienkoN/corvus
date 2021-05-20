@@ -137,6 +137,25 @@ a {
   }
 }
 
+#mapAbout {
+  margin: 80px 0 100px;
+  width: 100%;
+  height: 560px;
+  z-index: 1;
+
+  @media (max-width: 1199px) {
+    height: 500px;
+  }
+
+  @media (max-width: 991px) {
+    height: 450px;
+  }
+
+  @media (max-width: 374px) {
+    height: 400px;
+  }
+}
+
 @media (max-width: 991px) {
   .main--index {
     padding-top: 69px;

@@ -123,7 +123,7 @@ $(document).ready(function () {
         },
     });
 
-    //map
+    //map 1
     const map = L.map('map')
         .setView({
             lat: 48.50446,
@@ -156,6 +156,8 @@ $(document).ready(function () {
     mainPinMarker.addTo(map);
     mainPinMarker.bindPopup("проспект Свободи,<br> 75, Кам'янське");
 
+
+    //map 2
     const mapPopup = L.map('mapPopup')
         .setView({
             lat: 48.50446,
@@ -187,6 +189,41 @@ $(document).ready(function () {
 
     mainPinMarkerPopup.addTo(mapPopup);
     mainPinMarkerPopup.bindPopup("проспект Свободи,<br> 75, Кам'янське");
+
+    //map 3
+    const mapAbout = L.map('mapAbout')
+        .setView({
+            lat: 48.50446,
+            lng: 34.61024,
+        }, 15);
+
+    L.tileLayer(
+        'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png',
+        {
+            attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+        },
+    ).addTo(mapAbout);
+
+    const mainPinIconAbout = L.icon({
+        iconUrl: 'img/map-pin.png',
+        iconSize: [30, 47],
+        iconAnchor: [15, 47],
+    });
+
+    const mainPinMarkerAbout = L.marker(
+        {
+            lat: 48.50446,
+            lng: 34.61024,
+        },
+        {
+            icon: mainPinIconAbout,
+        },
+    );
+
+    mainPinMarkerAbout.addTo(mapAbout);
+    mainPinMarkerAbout.bindPopup("проспект Свободи,<br> 75, Кам'янське");
+
+    //end maps
 
     $('.mapPopup-trigger').click(function (event) {
         event.preventDefault();
