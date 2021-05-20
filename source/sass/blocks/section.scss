@@ -33,13 +33,14 @@
     &--tabs {
       margin-bottom: 140px;
     }
+
+    &--intro .container {
+      padding: 0;
+    }
   }
 }
 
 @media (max-width: 767px) {
-  .section--intro .container {
-    padding: 0;
-  }
 
   .section--intro {
     margin-bottom: 60px;
