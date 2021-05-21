@@ -1,0 +1,72 @@
+.conditions {
+  margin: 70px 0 170px;
+  position: relative;
+}
+
+.conditions__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: $white;
+
+  p {
+    margin: 0 0 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.conditions__title {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  z-index: -2;
+
+  font-family: 'Bebas Neue Cyrillic',sans-serif;
+  font-size: 370px;
+  font-weight: 400;
+  line-height: 1;
+  color: #292929;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  opacity: .16;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (max-width: 1499px) {
+  .conditions__title {
+    font-size: 300px;
+    top: -40%;
+  }
+}
+
+@media (max-width: 1299px) {
+  .conditions__title {
+    font-size: 250px;
+    top: -30%;
+  }
+}
+
+@media (max-width: 991px) {
+  .conditions__title {
+    font-size: 200px;
+    top: -20%;
+  }
+}
+
+@media (max-width: 767px) {
+  .conditions__title {
+    font-size: 160px;
+    top: -15%;
+  }
+}
+
+@media (max-width: 575px) {
+  .conditions__title {
+    display: none;
+  }
+}
