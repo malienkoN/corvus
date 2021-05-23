@@ -1,0 +1,145 @@
+.feedback__inner {
+  margin: 75px 0 65px;
+}
+
+.feedback__item {
+  padding: 24px 74px 44px 69px;
+  background-color: #3C3C3C;
+}
+
+.feedback__item + .feedback__item {
+  margin-top: 30px;
+}
+
+.feedback__item-header {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedback__item-votes {
+  background-color: #919191;
+}
+
+.feedback__item-votes__inner {
+  padding: 8px;
+  display: flex;
+}
+
+.feedback__item-vote {
+  display: flex;
+  align-items: center;
+
+  img {
+    display: block;
+    margin-right: 5px;
+  }
+
+  &:first-of-type {
+    margin-right: 12px;
+  }
+}
+
+.feedback__item-votes__bar {
+  height: 2px;
+  background-color: #842E2E;
+
+  span {
+    width: 64%;
+    display: block;
+    background-color: #579383;
+    height: 2px;
+  }
+}
+
+.feedback__item-author__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.feedback__item-author {
+  margin-right: 30px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.feedback__item-time {
+  color: #919191;
+  font-size: 16px;
+}
+
+.feedback__rating-stars {
+  margin-bottom: 20px;
+  width: 125px;
+  height: 21px;
+  background: url('../img/give-feedback-star-unpainted.svg') repeat-x;
+}
+
+.feedback__rating-stars__active {
+  height: 21px;
+  background: url('../img/give-feedback-star-painted.svg') repeat-x;
+}
+
+.feedback__pagination {
+  margin-bottom: 65px;
+  display: flex;
+}
+
+.feedback__pagination-item {
+  margin: 0 5px;
+}
+
+.feedback__pagination-link {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: #ebebeb;
+  transition: background-color .2s linear;
+
+  text-align: center;
+  line-height: 45px;
+  color: $black;
+  font-size: 16px;
+
+  &:hover {
+    background-color: lighten(#ebebeb, 5%);
+  }
+
+  &.active {
+    background-color: $yellow;
+  }
+}
+
+
+@media (max-width: 1499px) {
+  .feedback__item {
+    padding: 20px 40px 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .feedback__item {
+    padding: 20px 15px 30px;
+  }
+
+  .feedback__item-text {
+    font-size: 15px;
+  }
+
+  .feedback__item-header {
+    display: block;
+  }
+
+  .feedback__item-votes {
+    margin-top: 10px;
+    width: 121px;
+  }
+
+  .feedback__pagination-link {
+    width: 40px;
+    height: 40px;
+
+    line-height: 40px;
+  }
+}
