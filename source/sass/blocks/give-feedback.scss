@@ -1,0 +1,252 @@
+.give-feedback {
+  margin-bottom: 55px;
+  padding: 0 40px 60px 100px;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 535px 820px;
+  background-color: #3c3c3c;
+}
+
+.give-feedback__form {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  input,
+  textarea {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    color: $black;
+    background-color: $white;
+    border: 1px solid #707070;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &::placeholder {
+      color: #919191;
+    }
+  }
+
+  input {
+    padding: 0 15px;
+    height: 65px;
+  }
+
+  input + input {
+    margin-top: 10px;
+  }
+
+  textarea {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    resize: none;
+    height: 100px;
+  }
+}
+
+.give-feedback__form-title {
+  margin-bottom: 20px;
+  font-family: 'Bebas Neue Cyrillic', sans-serif;
+  font-size: 41px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.give-feedback__form-rating {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.give-feedback__form-rating__stars {
+  margin-right: 20px;
+  width: 125px;
+  height: 21px;
+  background: url('../img/give-feedback-star-unpainted.svg') repeat-x;
+}
+
+.give-feedback__form-rating__text {
+  color: #919191;
+}
+
+.give-feedback__form-btn {
+  width: 210px;
+  padding: 18px 0;
+}
+
+.give-feedback__rating-wrapper {
+  padding-top: 45px;
+}
+
+.give-feedback__rating {
+  padding: 0 35px 40px;
+  margin-bottom: 35px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background-color: $black;
+}
+
+.give-feedback__rating-info {
+  margin-right: 100px;
+  padding: 30px 0 0;
+}
+
+.give-feedback__rating-value {
+  margin-bottom: 5px;
+  font-family: 'Bebas Neue Cyrillic', sans-serif;
+  font-size: 97px;
+  color: $yellow;
+  line-height: 1;
+}
+
+.give-feedback__rating-stars {
+  margin-bottom: 20px;
+  width: 125px;
+  height: 21px;
+  background: url('../img/give-feedback-star-unpainted.svg') repeat-x;
+}
+
+.give-feedback__rating-stars__active {
+  height: 21px;
+  background: url('../img/give-feedback-star-painted.svg') repeat-x;
+}
+
+.give-feedback__rating-desc {
+  font-size: 20px;
+}
+
+.give-feedback__rating-lines {
+  padding: 40px 0 0;
+}
+
+.give-feedback__rating-line {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.give-feedback__rating-line__progress {
+  margin: 0 60px 0 20px;
+  background-color: #343434;
+  height: 5px;
+  width: 100%;
+
+  span {
+    display: block;
+    height: 4px;
+    background-color: $yellow;
+  }
+}
+
+.give-feedback__rating-line__volume {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.give-feedback__rating-title {
+  margin-bottom: 10px;
+  font-family: 'Bebas Neue Cyrillic', sans-serif;
+  font-size: 41px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+@media (max-width: 1599px) {
+  .give-feedback {
+    padding: 0 40px 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .give-feedback__rating-info {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .give-feedback__rating-value {
+    font-size: 90px;
+  }
+
+  .give-feedback__form-title {
+    font-size: 37px;
+  }
+
+  .give-feedback__rating-title {
+    font-size: 37px;
+  }
+
+  .give-feedback__form input {
+    height: 60px;
+  }
+
+  .give-feedback__form textarea {
+    height: 90px;
+  }
+
+  .give-feedback {
+    grid-column-gap: 30px;
+    padding: 0 30px 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .give-feedback {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575px) {
+  .give-feedback {
+    padding: 0;
+    background: none;
+  }
+
+  .give-feedback__rating {
+    padding: 0;
+    background: none;
+  }
+
+  .give-feedback__rating-info {
+    padding: 0;
+    margin-right: 15px;
+  }
+
+  .give-feedback__rating-lines {
+    padding: 20px 0 0;
+  }
+
+  .give-feedback__rating-line__progress {
+    margin: 0 50px 0 10px;
+  }
+
+  .give-feedback__form-rating {
+    margin: 15px 0 10px;
+    display: block;
+  }
+
+  .give-feedback__form-rating__text {
+    margin-top: 5px;
+    font-size: 15px;
+  }
+
+  .give-feedback__form input,
+  .give-feedback__form textarea {
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .give-feedback__form input {
+    height: 55px;
+  }
+}

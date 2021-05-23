@@ -1,0 +1,89 @@
+---
+layout: default-another
+title: feedback
+---
+
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item" aria-current="page">Відгуки</li>
+        </ol>
+    </nav>
+</div>
+
+<section>
+    <div class="container">
+        <div class="give-feedback">
+            <form class="give-feedback__form" action="/" method="post">
+                <h3 class="give-feedback__form-title">Залишити відгук</h3>
+                <input type="text" placeholder="Ваше ім’я">
+                <input type="email" placeholder="Електронна пошта">
+                <input type="tel" placeholder="Контактна інформація">
+                <input type="text" placeholder="Тема повідомлення">
+                <div class="give-feedback__form-rating">
+                    <div class="give-feedback__form-rating__stars"></div>
+                    <p class="give-feedback__form-rating__text">Будь ласка, оцініть за&nbsp;5&nbsp;бальною шкалою</p>
+                </div>
+                <textarea placeholder="Відгук"></textarea>
+                <button class="btn btn--default give-feedback__form-btn" type="submit">Відправити</button>
+            </form>
+
+            <div class="give-feedback__rating-wrapper">
+                <div class="give-feedback__rating">
+                    <div class="give-feedback__rating-info">
+                        <div class="give-feedback__rating-value">5,00</div>
+                        <div class="give-feedback__rating-stars">
+                            <div class="give-feedback__rating-stars__active" style="width: 60%"></div>
+                        </div>
+                        <div class="give-feedback__rating-desc">Оцінок – <span>184</span></div>
+                    </div>
+
+                    <div class="give-feedback__rating-lines">
+                        <div class="give-feedback__rating-line">
+                            <div class="give-feedback__rating-line__rate">5</div>
+                            <div class="give-feedback__rating-line__progress">
+                                <span style="width: 100%;"></span>
+                            </div>
+                            <div class="give-feedback__rating-line__volume">100%</div>
+                        </div>
+                        <div class="give-feedback__rating-line">
+                            <div class="give-feedback__rating-line__rate">4</div>
+                            <div class="give-feedback__rating-line__progress">
+                                <span style="width: 0;"></span>
+                            </div>
+                            <div class="give-feedback__rating-line__volume">0%</div>
+                        </div>
+                        <div class="give-feedback__rating-line">
+                            <div class="give-feedback__rating-line__rate">3</div>
+                            <div class="give-feedback__rating-line__progress">
+                                <span style="width: 0;"></span>
+                            </div>
+                            <div class="give-feedback__rating-line__volume">0%</div>
+                        </div>
+                        <div class="give-feedback__rating-line">
+                            <div class="give-feedback__rating-line__rate">2</div>
+                            <div class="give-feedback__rating-line__progress">
+                                <span style="width: 0;"></span>
+                            </div>
+                            <div class="give-feedback__rating-line__volume">0%</div>
+                        </div>
+                        <div class="give-feedback__rating-line">
+                            <div class="give-feedback__rating-line__rate">1</div>
+                            <div class="give-feedback__rating-line__progress">
+                                <span style="width: 0;"></span>
+                            </div>
+                            <div class="give-feedback__rating-line__volume">0%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="give-feedback__rating-title">Відгукі про CORVUS</h4>
+                <div class="give-feedback__rating-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequatur dignissimos explicabo labore odio quisquam quos sapiente totam voluptas voluptatibus! Explicabo impedit magni necessitatibus nulla obcaecati officiis pariatur sint totam?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis cupiditate deleniti, doloremque dolores earum est facere facilis itaque minima molestias mollitia nam nisi nulla optio quo saepe sed, voluptatem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
