@@ -230,6 +230,16 @@ $(document).ready(function () {
         $(this).text(replaceText);
     });
 
+    //faq accordion
+    $('.faq__item-trigger').click(function () {
+        $(this).next('.faq__item-content').slideToggle();
+        $(this).parent().toggleClass('active');
+        const replaceText = $(this).parent().hasClass('active') ? '-' : '+';
+        $(this).find('.faq__item-trigger__plus').text(replaceText);
+    });
+
+    $('.faq__item-trigger:first').click();
+
     //map 3
     const mapAbout = L.map('mapAbout')
         .setView({
