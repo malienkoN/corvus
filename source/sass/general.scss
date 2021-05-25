@@ -156,6 +156,24 @@ a {
   }
 }
 
+#mapContacts {
+  width: 100%;
+  height: 520px;
+  z-index: 1;
+
+  @media (max-width: 991px) {
+    height: 500px;
+  }
+
+  @media (max-width: 767px) {
+    height: 450px;
+  }
+
+  @media (max-width: 374px) {
+    height: 400px;
+  }
+}
+
 @media (max-width: 991px) {
   .main--index {
     padding-top: 69px;
