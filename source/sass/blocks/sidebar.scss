@@ -1,4 +1,148 @@
+.sidebar {
+  padding: 20px;
+  background-color: #3c3c3c;
+}
+
+.sidebar__filter {
+  display: none;
+}
+
+.sidebar__item-trigger {
+  padding: 15px 0;
+  font-family: 'Bebas Neue Cyrillic', sans-serif;
+  color: $yellow;
+  font-size: 25px;
+  font-weight: 400;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .sidebar__icon-dropdown {
+  margin-left: 20px;
   fill: $yellow;
   transition: transform .2s linear;
+
+  &.rotate {
+    transform: rotate(180deg);
+  }
+}
+
+.sidebar__item-content {
+  display: block;
+  padding: 20px 10px;
+  max-height: 520px;
+  overflow-y: auto;
+}
+
+.sidebar__item-content::-webkit-scrollbar {
+  background-color: #ffffff;
+  width: 6px;
+  border: 2px solid #3c3c3c;
+}
+
+.sidebar__item-content::-webkit-scrollbar-thumb {
+  background-color: $yellow;
+  border-radius: 50px;
+}
+
+.sidebar__item-content a {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.sidebar__item-content li {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__item-content li + li {
+  margin-top: 25px;
+}
+
+//checkbox
+
+.sidebar__item-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.sidebar__item-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: $white;
+  cursor: pointer;
+}
+
+.sidebar__item-checkbox + label::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-right: 8px;
+  background-color: $white;
+  border: 1px solid #707070;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.sidebar__item-checkbox:checked + label::before {
+  background-image: url('../img/checkbox.svg');
+}
+
+.sidebar__item-count {
+  padding: 0 10px;
+  width: 125px;
+  height: 50px;
+  color: #3c3c3c;
+  border: 1px solid #707070;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+
+  &:first-of-type {
+    margin-right: 20px;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $black;
+  }
+}
+
+@media (max-width: 1499px) {
+  .sidebar__item-count {
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .sidebar__item-checkbox + label {
+    font-size: 15px;
+  }
+
+  .sidebar__item-content a {
+    font-size: 18px;
+  }
+
+  .sidebar__item-trigger {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .sidebar__item-count {
+    width: 90px;
+    height: 45px;
+    font-size: 17px;
+  }
 }

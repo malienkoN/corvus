@@ -240,6 +240,12 @@ $(document).ready(function () {
 
     $('.faq__item-trigger:first').click();
 
+    /* Sidebar accordion */
+    $('.sidebar__item-trigger').click(function () {
+        $(this).next('.sidebar__item-content').slideToggle();
+        $(this).find('.sidebar__icon-dropdown').toggleClass('rotate');
+    });
+
     //map 3
     const mapAbout = L.map('mapAbout')
         .setView({
