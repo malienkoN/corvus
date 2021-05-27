@@ -1,4 +1,5 @@
 .catalog {
+  margin-bottom: 60px;
   display: grid;
   grid-template-columns: 460px 1fr;
   grid-column-gap: 50px;
@@ -11,6 +12,64 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
   justify-content: center;
+}
+
+.catalog__inner-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.catalog__sorting {
+  margin-bottom: 40px;
+  padding: 0 16px;
+  background-color: #3c3c3c;
+  height: 53px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.catalog__sorting-item {
+  display: flex;
+  align-items: center;
+}
+
+.catalog__sorting-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.catalog__sorting-list {
+  display: flex;
+
+  a {
+    font-size: 16px;
+    color: $white;
+
+    &.active {
+      color: $yellow;
+    }
+  }
+
+  li {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.catalog__sorting-select__title {
+  font-size: 16px;
+  margin-right: 14px;
+}
+
+.catalog__inner-title {
+  margin-bottom: 10px;
+  font-family: 'Bebas Neue Cyrillic', sans-serif;
+  font-size: 41px;
+  font-weight: 400;
+  color: $white;
 }
 
 @media (max-width: 1749px) {
@@ -29,6 +88,10 @@
   .catalog__cards {
     grid-gap: 20px;
   }
+
+  .catalog__inner-title {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 1359px) {
@@ -43,6 +106,14 @@
   }
 }
 
+@media (max-width: 1299px) {
+  .catalog__sorting-list a,
+  .catalog__sorting-select__title,
+  .catalog__sorting-title {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 1199px) {
   .catalog {
     grid-template-columns: 280px 1fr;
@@ -52,11 +123,63 @@
   .catalog__cards {
     grid-gap: 25px;
   }
+
+  .catalog__sorting {
+    padding: 15px 0;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .catalog__sorting-item:first-of-type {
+    margin-bottom: 20px;
+  }
 }
 
 
 @media (max-width: 991px) {
   .catalog {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog__cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .catalog__sorting {
+    padding: 15px;
+    align-items: flex-start;
+  }
+
+  .catalog__sorting-list {
+    flex-wrap: wrap;
+  }
+
+  .catalog__sorting-list li {
+    margin: 0 10px 10px 0;
+  }
+
+  .catalog__sorting-item:first-of-type {
+    display: block;
+  }
+
+  .catalog__sorting-title {
+    margin-bottom: 10px;
+  }
+
+  .catalog__inner-title {
+    font-size: 31px;
+  }
+
+  .catalog__cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 575px) {
+  .catalog__cards {
     grid-template-columns: 1fr;
   }
 }

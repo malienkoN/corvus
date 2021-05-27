@@ -119,6 +119,14 @@
   }
 }
 
+.sidebar__banner {
+  display: block;
+
+  img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 1499px) {
   .sidebar__item-count {
     width: 100px;
@@ -144,5 +152,62 @@
     width: 90px;
     height: 45px;
     font-size: 17px;
+  }
+}
+
+@media (max-width: 991px) {
+  .sidebar__banner {
+    display: none;
+  }
+
+  .sidebar__item-content {
+    display: none;
+  }
+
+  .sidebar {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .sidebar__filter {
+    width: 100%;
+    padding: 15px;
+    font-family: 'Bebas Neue Cyrillic',sans-serif;
+    color: #ffc62b;
+    font-size: 27px;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3c3c3c;
+  }
+
+  .sidebar__item-content::-webkit-scrollbar {
+    border: 2px solid lighten(#3c3c3c, 10%);
+  }
+
+  .sidebar__items {
+    padding: 25px;
+    display: none;
+    background-color: lighten(#3c3c3c, 10%);
+  }
+
+  .sidebar__item-trigger {
+    font-size: 21px;
+  }
+
+  .sidebar__item-content a {
+    font-size: 16px;
+  }
+
+  .sidebar__item-checkbox + label {
+    font-size: 14px;
+  }
+
+  .sidebar__item-count {
+    width: 90px;
+    height: 40px;
+    font-size: 16px;
   }
 }

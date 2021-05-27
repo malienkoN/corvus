@@ -246,6 +246,11 @@ $(document).ready(function () {
         $(this).find('.sidebar__icon-dropdown').toggleClass('rotate');
     });
 
+    /* Mobile filter accordion */
+    $('.sidebar__filter').click(function () {
+        $(this).next('.sidebar__items').slideToggle();
+    });
+
     //map 3
     const mapAbout = L.map('mapAbout')
         .setView({
