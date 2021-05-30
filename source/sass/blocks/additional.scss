@@ -6,6 +6,13 @@
   justify-content: center;
 }
 
+.additional-articles {
+  margin: 70px 0 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
 @media (max-width: 1649px) {
   .additional {
     grid-template-columns: repeat(4, 1fr);
@@ -22,11 +29,19 @@
   .additional {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .additional-articles {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 991px) {
   .additional {
     grid-gap: 20px;
+  }
+
+  .additional-articles {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -34,10 +49,18 @@
   .additional {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .additional-articles {
+    grid-gap: 20px;
+  }
 }
 
 @media (max-width: 575px) {
   .additional {
+    grid-template-columns: 1fr;
+  }
+
+  .additional-articles {
     grid-template-columns: 1fr;
   }
 }
