@@ -70,6 +70,123 @@
   }
 }
 
+.product-popup__fade {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.product-popup__fade.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.product-popup {
+  margin: 50px auto;
+  padding: 40px 0 50px;
+  width: 450px;
+  background-color: #3c3c3c;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-popup__title {
+  margin-bottom: 40px;
+  font-family: 'Bebas Neue Cyrillic', sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.product-popup__close {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 2;
+
+  &:before,
+  &:after {
+    content: '';
+    height: 20px;
+    width: 2px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    background-color: $yellow;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.product-popup__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  input {
+    width: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    color: #707070;
+    padding: 14px 15px;
+    background-color: $white;
+    border: 1px solid #707070;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  input + input {
+    margin-top: 10px;
+  }
+
+  button {
+    margin-top: 30px;
+    width: 240px;
+    padding: 13px 0;
+    display: block;
+    background-color: $yellow;
+    border: 1px solid #707070;
+    font-size: 16px;
+    color: #000;
+    transition: background-color .2s linear;
+
+    &:hover {
+      background-color: darken($yellow, 5%);
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .modal-fade {
     width: 100%;
@@ -138,6 +255,10 @@
     margin: 0;
     padding: 0;
   }
+
+  .product-popup {
+    margin: 30px auto;
+  }
 }
 @media (max-width: 767px) {
   .modal--cart {
@@ -153,5 +274,14 @@
 @media (max-width: 575px) {
   .modal--cart {
     padding: 50px 10px 30px;
+  }
+
+  .product-popup {
+    width: auto;
+    margin: 20px 10px;
+  }
+
+  .product-popup__form input {
+    width: 240px;
   }
 }

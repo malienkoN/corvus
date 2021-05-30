@@ -266,6 +266,42 @@ $(document).ready(function () {
 
     /* /tabs */
 
+    $('#fastOrder-trigger').click(function (event) {
+        event.preventDefault();
+
+        $('#fastOrder').toggleClass('show');
+        $('body').toggleClass('lock');
+    });
+
+    $('#callRequest-trigger').click(function (event) {
+        event.preventDefault();
+
+        $('#callRequest').toggleClass('show');
+        $('body').toggleClass('lock');
+    });
+
+    $('.product-popup__close').click( function (event) {
+        event.preventDefault();
+
+        $('.product-popup__fade').removeClass('show');
+        $('body').removeClass('lock');
+    }) ;
+
+    $(document).keydown(function(e) {
+        if (e.keyCode === 27) {
+            e.stopPropagation();
+            $('.product-popup__fade').removeClass('show');
+            $('body').removeClass('lock');
+        }
+    });
+
+    $('.product-popup__fade').click(function(e) {
+        if ($(e.target).closest('.product-popup').length === 0) {
+            $(this).removeClass('show');
+            $('body').removeClass('lock');
+        }
+    });
+
     //map 3
     const mapAbout = L.map('mapAbout')
         .setView({

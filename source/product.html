@@ -120,11 +120,11 @@ title: product
                             Додати до кошика
                         </a>
 
-                        <a class="product__bottom-link btn" href="#">
-                            Купити в розстрочку
+                        <a class="product__bottom-link btn" id="fastOrder-trigger" href="#">
+                            Швидке замовлення
                         </a>
 
-                        <a class="product__bottom-link product__bottom-link--tel btn" href="#">
+                        <a class="product__bottom-link product__bottom-link--tel btn" id="callRequest-trigger" href="#">
                             <svg width="29.749" height="29.802" viewBox="0 0 29.749 29.802">
                                 <use xlink:href="img/sprite.svg#icon-product-bottom-tel"></use>
                             </svg>
@@ -415,3 +415,31 @@ title: product
         </div>
     </div>
 </section>
+
+<div class="product-popup__fade" id="callRequest">
+    <div class="product-popup">
+        <button class="product-popup__close" type="button" aria-label="Закрыть"></button>
+
+        <h2 class="product-popup__title">Замовити дзвінок</h2>
+
+        <form class="footer__right-form" action="/" method="post">
+            <input class="footer__right-form__input" type="tel" placeholder="+38(___) ___-__-__">
+            <button class="footer__right-form__btn btn" type="submit">Замовити дзвінок</button>
+        </form>
+    </div>
+</div>
+
+<div class="product-popup__fade" id="fastOrder">
+    <div class="product-popup">
+        <button class="product-popup__close" type="button" aria-label="Закрыть"></button>
+
+        <h2 class="product-popup__title">Швидко замовити</h2>
+
+        <form class="product-popup__form" action="/" method="post">
+            <input type="text" placeholder="Ім’я">
+            <input type="tel" placeholder="+38(___) ___-__-__">
+            <input type="email" placeholder="Email">
+            <button class="btn" type="submit">Замовити</button>
+        </form>
+    </div>
+</div>
