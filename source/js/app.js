@@ -251,6 +251,21 @@ $(document).ready(function () {
         $(this).next('.sidebar__items').slideToggle();
     });
 
+    /* tabs */
+    $('.product-tabs__triggers-item').click(function (e) {
+        e.preventDefault();
+
+        $('.product-tabs__triggers-item').removeClass('product-tabs__triggers-item--active');
+        $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
+
+        $(this).addClass('product-tabs__triggers-item--active');
+        $($(this).attr('href')).addClass('product-tabs__content-item--active');
+    });
+
+    $('.product-tabs__triggers-item:first').click();
+
+    /* /tabs */
+
     //map 3
     const mapAbout = L.map('mapAbout')
         .setView({
