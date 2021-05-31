@@ -15,19 +15,23 @@ title: feedback
 <section>
     <div class="container">
         <div class="give-feedback">
-            <form class="give-feedback__form" action="/" method="post">
-                <h3 class="give-feedback__form-title">Залишити відгук</h3>
-                <input type="text" placeholder="Ваше ім’я">
-                <input type="email" placeholder="Електронна пошта">
-                <input type="tel" placeholder="Контактна інформація">
-                <input type="text" placeholder="Тема повідомлення">
-                <div class="give-feedback__form-rating">
-                    <div class="give-feedback__form-rating__stars"></div>
-                    <p class="give-feedback__form-rating__text">Будь ласка, оцініть за&nbsp;5&nbsp;бальною шкалою</p>
-                </div>
-                <textarea placeholder="Відгук"></textarea>
-                <button class="btn btn--default give-feedback__form-btn" type="submit">Відправити</button>
-            </form>
+            <div class="give-feedback__form-wrapper">
+                <form class="give-feedback__form" action="/" method="post">
+                    <h3 class="give-feedback__form-title">Залишити відгук</h3>
+                    <input type="text" placeholder="Ваше ім’я">
+                    <input type="email" placeholder="Електронна пошта">
+                    <input type="tel" placeholder="Контактна інформація">
+                    <input type="text" placeholder="Тема повідомлення">
+                    <div class="give-feedback__form-rating">
+                        <div class="give-feedback__form-rating__stars"></div>
+                        <p class="give-feedback__form-rating__text">Будь ласка, оцініть за&nbsp;5&nbsp;бальною шкалою</p>
+                    </div>
+                    <textarea placeholder="Відгук"></textarea>
+                    <button class="btn btn--default give-feedback__form-btn" type="submit">Відправити</button>
+                </form>
+
+                <div id="ec-form-success-{$fid}"></div>
+            </div>
 
             <div class="give-feedback__rating-wrapper">
                 <div class="give-feedback__rating">
