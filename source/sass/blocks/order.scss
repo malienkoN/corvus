@@ -1,3 +1,149 @@
-.order {
+.order__container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
 
+.order__top {
+  margin-bottom: 25px;
+}
+
+.order__top-item {
+  padding: 0 40px 0 0;
+  background-color: #3c3c3c;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    display: block;
+    margin-right: 50px;
+  }
+}
+
+.order__top-item + .order__top-item {
+  margin-top: 15px;
+}
+
+.order__top-item__col {
+  display: flex;
+  align-items: center;
+}
+
+.order__top-item__title {
+  max-width: 320px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.order__top-item-amount,
+.order__top-item-price {
+  margin-right: 160px;
+  font-weight: 700;
+}
+
+.order__top-item__remove {
+  width: 25px;
+  height: 22px;
+  background-color: $yellow;
+  padding: 0;
+  position: relative;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color .2s linear;
+
+  &:hover {
+    background-color: darken($yellow, 5%);
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 4px;
+    background-color: #3c3c3c;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -2px;
+    margin-left: -7px;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: 1299px) {
+
+  .order__top-item-amount,
+  .order__top-item-price {
+    margin-right: 80px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .order__top-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 30px;
+
+    img {
+      margin-right: 30px;
+    }
+  }
+
+  .order__top-item__col {
+    width: 100%;
+  }
+
+  .order__top-item__col:first-of-type {
+    padding-right: 20px;
+    margin-bottom: 25px;
+  }
+
+  .order__top-item__col:last-of-type {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .order__top-item__col:first-of-type {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order__top-item img {
+    margin: 0 0 15px;
+  }
+
+  .order__top-item__col:first-of-type {
+    padding: 0;
+  }
+
+  .order__top-item__col:last-of-type {
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  .order__top-item-amount,
+  .order__top-item-price {
+    margin: 0;
+  }
+
+  .order__top-item__title {
+    padding-left: 10px;
+    max-width: 100%;
+  }
 }
