@@ -94,36 +94,50 @@ title: order
                         <div class="order__middle-item">
                             <h3 class="order__middle-title">Способи оплати:</h3>
 
-                            <div class="order__middle-item__radios">
+                            <div class="order__middle-item__radios-wrapper">
                                 <p>Віберіть оплату</p>
-                                <input type="radio" class="custom-radio" id="payment-1" name="payment" value="1" checked>
-                                <label for="payment-1">Оплата готівкою при отриманні</label>
 
-                                <input type="radio" class="custom-radio" id="payment-2" name="payment" value="2">
-                                <label for="payment-2">Оплата онлайн (WayForPay)</label>
+                                <div class="order__middle-item__radios">
+                                    <input type="radio" class="custom-radio" id="payment-1" name="payment" value="1" checked>
+                                    <label for="payment-1">Оплата готівкою при отриманні</label>
 
-                                <input type="radio" class="custom-radio" id="payment-3" name="payment" value="3">
-                                <label for="payment-3">Оплата онлайн (LiqPay)</label>
+                                    <input type="radio" class="custom-radio" id="payment-2" name="payment" value="2">
+                                    <label for="payment-2">Оплата онлайн (WayForPay)</label>
 
-                                <input type="radio" class="custom-radio" id="payment-4" name="payment" value="4">
-                                <label for="payment-4">Оплата онлайн (Fondy)</label>
+                                    <input type="radio" class="custom-radio" id="payment-3" name="payment" value="3">
+                                    <label for="payment-3">Оплата онлайн (LiqPay)</label>
 
-                                <input type="radio" class="custom-radio" id="payment-5" name="payment" value="5">
-                                <label for="payment-5">Накладений платіж &laquo;Нової Пошти&raquo;</label>
+                                    <input type="radio" class="custom-radio" id="payment-4" name="payment" value="4">
+                                    <label for="payment-4">Оплата онлайн (Fondy)</label>
 
-                                <input type="radio" class="custom-radio" id="payment-6" name="payment" value="6">
-                                <label for="payment-6">Оплата на карту</label>
+                                    <input type="radio" class="custom-radio" id="payment-5" name="payment" value="5">
+                                    <label for="payment-5">Накладений платіж &laquo;Нової Пошти&raquo;</label>
+
+                                    <input type="radio" class="custom-radio" id="payment-6" name="payment" value="6">
+                                    <label for="payment-6">Оплата на карту</label>
+                                </div>
                             </div>
                         </div>
 
                         <div class="order__middle-item">
-                            <h3 class="order__middle-title">Дані одержувача:</h3>
+                            <h3 class="order__middle-title">Способи доставки:</h3>
 
-                            <div class="order__middle-item__inputs">
-                                <label>E-mail* <input type="email" placeholder="E-mail"></label>
-                                <label>ПІБ* <input type="text" placeholder="ПІБ"></label>
-                                <label>Телефон* <input type="tel" placeholder="Телефон"></label>
-                                <label>Коментар <textarea placeholder="Коментар"></textarea></label>
+                            <div class="order__middle-item__radios-wrapper">
+                                <p>Виберіть доставку</p>
+
+                                <div class="order__middle-item__radios">
+                                    <input type="radio" class="custom-radio" id="delivery-1" name="delivery" value="1" checked>
+                                    <label for="delivery-1">Самовивіз</label>
+
+                                    <input type="radio" class="custom-radio" id="delivery-2" name="delivery" value="2">
+                                    <label for="delivery-2">Нова Пошта</label>
+
+                                    <input type="radio" class="custom-radio" id="delivery-3" name="delivery" value="3">
+                                    <label for="delivery-3">Делівері</label>
+
+                                    <input type="radio" class="custom-radio" id="delivery-4" name="delivery" value="4">
+                                    <label for="delivery-4">САТ</label>
+                                </div>
                             </div>
                         </div>
 
@@ -134,9 +148,19 @@ title: order
                                 <label>Номер<br> отделения <input type="text" placeholder="Номер отделения"></label>
                                 <label>Область <input type="text" placeholder="Область"></label>
                                 <label>Город <input type="text" placeholder="Город"></label>
-                                <label>Улица <input class="input-middle" type="text" placeholder="Улица"><input class="input-small n1" type="text" placeholder="Дом"><input class="input-small" type="text" placeholder="Офис"></label>
+                                <label>Улица <input class="input-middle" type="text" placeholder="Улица">
+                                    <span class="input-small__wrapper">
+                                        <input class="input-small" type="text" placeholder="Дом">
+                                        <input class="input-small" type="text" placeholder="Офис">
+                                    </span>
+                                </label>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="order__footer">
+                        <p>До сплати: <span>23500 грн</span></p>
+                        <button class="btn" type="submit">Зробити замовлення</button>
                     </div>
                 </form>
             </div>
