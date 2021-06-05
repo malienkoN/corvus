@@ -285,6 +285,13 @@
     padding: 0;
   }
 
+  .dropdown__submenu .dropdown__submenu {
+    position: static;
+    width: auto;
+    background: none;
+    padding: 0;
+  }
+
   .dropdown__submenu {
     display: none;
   }
