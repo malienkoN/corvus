@@ -1,4 +1,20 @@
 $(document).ready(function () {
+    // mob menu
+    $('.dropdown__content-item__inner > .dropdown__mobile-arrow').click(function (event) {
+        event.preventDefault();
+
+        // $('.dropdown__content-item > .dropdown__submenu').toggleClass('active');
+        $(this).parents('.dropdown__content-item__inner').next('.dropdown__submenu').slideToggle();
+    });
+
+    $('.dropdown__submenu-item__inner > .dropdown__mobile-arrow').click(function (event) {
+        event.preventDefault();
+
+        $(this).parents('.dropdown__submenu-item__inner').next('.dropdown__submenu').slideToggle();
+    });
+
+    //
+
     $('#tel-dropdown__trigger').click(function (event) {
         event.preventDefault();
 
